@@ -1,1 +1,43 @@
+/* 1. Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300;400;600&display=swap');
+
+/* 2. Import Tailwind (Keep this, do not add @tailwind base/components/utilities) */
 @import "tailwindcss";
+
+/* 3. Configure Theme (The v4 way to set fonts) */
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Quicksand", sans-serif;
+  
+  /* Optional: You can extend colors here if you want specific coquette shades */
+  /* --color-rose-50: #fff1f2; */
+}
+
+/* 4. Global Styles & Custom Utilities */
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #fdf2f8; 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fbcfe8; 
+  border-radius: 20px;
+}
+
+body {
+  background-color: #fff1f2; /* Rose-50 */
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Coquette Decorative Class */
+.coquette-border {
+  @apply border-2 border-pink-200 shadow-[0_0_15px_rgba(251,207,232,0.6)];
+}
