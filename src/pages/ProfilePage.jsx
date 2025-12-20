@@ -13,7 +13,7 @@ const PROFILE_DATA = {
     nickname: "Jubilee",
     role: "Guidance Facilitator",
     school: "Batangas State University - Balayan Campus",
-    avatar: "jubilee.jpg", 
+    avatar: "/jubilee.jpg", 
     facts: {
         birthday: "October 31, 2000",
         zodiac: "Scorpio ♏",
@@ -85,7 +85,7 @@ const PROFILE_DATA = {
     ],
     nailongTitle: "My Comfort Character",
     nailongDesc: "Certified Nailong Fan! 🦖💛",
-    nailongImg: "src/nailong.jpg" 
+    nailongImg: "/nailong.jpg" 
 };
 
 
@@ -183,7 +183,7 @@ const ProfilePage = () => {
                         
                         <div className="w-56 h-56 md:w-64 md:h-64 rounded-full p-3 border-[6px] border-white/90 shadow-2xl relative z-10 overflow-hidden ring-4 ring-pink-100 bg-white/50 backdrop-blur-sm">
                             <img 
-                                src="jubilee.jpg"
+                                src="/jubilee.jpg"
                                 alt="Profile" 
                                 className="w-full h-full rounded-full object-cover transition-transform duration-700 group-hover:scale-110" 
                             />
@@ -540,7 +540,7 @@ const ProfilePage = () => {
                         <div className="absolute inset-0 bg-yellow-300 rounded-[3rem] blur-2xl opacity-60"></div>
                         <div className="w-full h-full rounded-[3rem] overflow-hidden border-[8px] border-white shadow-2xl relative z-10 bg-white rotate-3 hover:rotate-0 transition-transform duration-500">
                             <img 
-                                src="nailong.png"
+                                src="/nailong.jpg"
                                 alt="Nailong" 
                                 className="w-full h-full object-cover" 
                             />
