@@ -186,7 +186,7 @@ const ProfilePage = () => {
                                 src={PROFILE_DATA.avatar} 
                                 alt="Profile" 
                                 className="w-full h-full rounded-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                                onError={(e) => {e.target.src = "jubilee.jpeg"}} 
+                                onError={(e) => {e.target.src = "/src/jubilee.jpg";}} 
                             />
                         </div>
                         {/* Bigger Bow Icon */}
